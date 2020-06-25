@@ -1,0 +1,7 @@
+#! /usr/bin/env nix-shell
+#! nix-shell -i bash --pure ./shell.nix
+
+BAZEL_COMMON_OPTS="--nohome_rc"
+
+bazel $BAZEL_COMMON_OPTS "$@"
+
